@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Edo";
+  src: url("/fonts/edosz.ttf") format("truetype"); /* Adjust the path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .heading-style {
+    @apply sm:text-4xl lg:text-6xl text-2xl font-semibold text-green font-edo;
+  }
+  .ceter {
+    @apply flex justify-center items-center;
+  }
+  .paragraph-style {
+    @apply sm:text-sm lg:text-sm text-lg  text-text font-mukta;
+  }
+  .content-container {
+    @apply w-full max-w-[680px] mx-auto;
+  }
+}
