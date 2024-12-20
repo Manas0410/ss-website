@@ -1,12 +1,5 @@
 import React from "react";
-
-const icons = [
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
-];
+import { specialities } from "../constants";
 
 const IconBox = ({ imgUrl }) => {
   return (
@@ -23,7 +16,7 @@ const Specialities = () => {
       </h2>
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center gap-10 flex-wrap">
-          {icons.map((icon, index) => (
+          {specialities.map((icon, index) => (
             <IconBox imgUrl={icon} key={index} />
           ))}
         </div>
