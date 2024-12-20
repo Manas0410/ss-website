@@ -15,13 +15,6 @@ const App = () => {
       />
       <About />
       <Specialities />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
-      <About />
     </main>
   );
 };
