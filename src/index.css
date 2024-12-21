@@ -39,12 +39,10 @@
 button outlet 
 */
 
-/* From Uiverse.io by cssbuttons-io */
-/* From Uiverse.io by MuhammadHasann */
-button {
+.button {
   position: relative;
-  padding: 13px 35px;
-  background: #f5ddb7;
+  padding: 13px 27px;
+  background: #ef611a;
   font-size: 17px;
   font-weight: 900;
   color: #181818;
@@ -109,12 +107,12 @@ button {
   z-index: -2;
 }
 
-button:hover {
+.button:hover {
   padding: 13px 25px;
   border-radius: 8px 8px 24px 24px;
 }
 
-button:hover .icon-1 {
+.button:hover .icon-1 {
   top: -250%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -150,7 +148,7 @@ button:hover .icon-1 {
   }
 }
 
-button:hover .icon-2 {
+.button:hover .icon-2 {
   position: absolute;
   top: -200%;
   left: 90%;
@@ -187,7 +185,7 @@ button:hover .icon-2 {
   }
 }
 
-button:hover .icon-3 {
+.button:hover .icon-3 {
   position: absolute;
   top: -130%;
   left: 20%;
@@ -214,7 +212,7 @@ button:hover .icon-3 {
   }
 }
 
-button:hover .icon-4 {
+.button:hover .icon-4 {
   position: absolute;
   top: -300%;
   left: 10%;
@@ -241,7 +239,7 @@ button:hover .icon-4 {
   }
 }
 
-button:hover .icon-5 {
+.button:hover .icon-5 {
   position: absolute;
   top: -350%;
   left: 90%;
@@ -269,7 +267,7 @@ button:hover .icon-5 {
 }
 
 .fil-leaf-1 {
-  fill: #7b9b3a;
+  fill: #7b9b3a !important;
 }
 
 .fil-leaf-2 {
@@ -287,4 +285,19 @@ button:hover .icon-5 {
 
 .fil-leaf-5 {
   fill: #3c4819;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px); /* Adjust the distance */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.img-slide {
+  animation: slideRight 1s infinite ease-in-out;
 }

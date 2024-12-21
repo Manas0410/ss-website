@@ -1,6 +1,6 @@
 const NvigateOutletButton = () => {
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-4 right-6">
       <PlantButton />
     </div>
   );
@@ -10,8 +10,11 @@ export default NvigateOutletButton;
 
 const PlantButton = () => {
   return (
-    <button>
-      Plant based
+    <button className="button">
+      <p className="flex gap-2 text-white">
+        <span>Visit Outlet</span>
+        <img src="/images/navButton/right.svg" className="img-slide" alt="" />
+      </p>
       <div className="icon-1">
         <img src="/images/navButton/icon1.svg" alt="" />
       </div>
