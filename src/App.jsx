@@ -3,6 +3,7 @@ import Specialities from "./components/Specialities";
 import { CarouselImages } from "./constants";
 import About from "./sections/About";
 import ContactUs from "./sections/ContactUs";
+import Footer from "./sections/Footer";
 import Menu from "./sections/Menu";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Specialities />
       <Menu />
       <ContactUs />
+      <Footer />
     </main>
   );
 };
