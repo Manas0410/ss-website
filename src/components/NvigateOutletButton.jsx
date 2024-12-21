@@ -1,6 +1,6 @@
 const NvigateOutletButton = () => {
   return (
-    <div className="fixed bottom-16 right-8">
+    <div className="fixed bottom-16 right-8 z-50">
       <PlantButton />
     </div>
   );

@@ -85,3 +85,11 @@ export const AddOns = {
     "Corn",
   ],
 };
+
+export const GalleryImages = [
+  "/images/Gallery/gallery1.png",
+  "/images/Gallery/gallery1.png",
+  "/images/Gallery/gallery1.png",
+  "/images/Gallery/gallery1.png",
+  "/images/Gallery/gallery1.png",
+];

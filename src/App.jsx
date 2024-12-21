@@ -4,6 +4,7 @@ import { CarouselImages } from "./constants";
 import About from "./sections/About";
 import ContactUs from "./sections/ContactUs";
 import Footer from "./sections/Footer";
+import Gallery from "./sections/Gallery";
 import Menu from "./sections/Menu";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Specialities />
       <Menu />
+      <Gallery />
       <ContactUs />
       <Footer />
     </main>
