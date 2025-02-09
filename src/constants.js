@@ -47,6 +47,7 @@ export const Chaats = {
     "Papdi chaat",
   ],
 };
+
 export const CustomersFavourite = {
   heading: "Customers Favourite",
   items: [

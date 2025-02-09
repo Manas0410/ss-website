@@ -44,18 +44,17 @@ const Gallery = () => {
         ))}
       </Slider>
 
-      {/* Navigation Buttons */}
       <button
         onClick={goToPrev}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-75 size-[50px]"
       >
-        &#8592; {/* Left Arrow */}
+        &#8592;
       </button>
       <button
         onClick={goToNext}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-75 size-[50px]"
       >
-        &#8594; {/* Right Arrow */}
+        &#8594;
       </button>
     </div>
   );
