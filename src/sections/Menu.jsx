@@ -1,13 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import { Chaats, CustomersFavourite, Puri, Drinks, AddOns } from "../constants";
 
 const ListRenderer = ({ data: { heading, items } }) => {
+  const navigate = useNavigate();
   return (
     <div className="font-mukta">
       <h3 className="font-bold mb-4 text-2xl text-orange">{heading}</h3>
       <ul className="flex flex-col gap-2">
         {items.map((item, i) => (
-          <li key={i} className="text-text ">
-            {item}
+          <li
+            onClick={() => navigate(`/product/${item.nav}`)}
+            key={i}
+            className="text-text hover:text-orange-light cursor-pointer flex gap-2 items-center"
+          >
+            {item.name}
+            <img src="/images/icons/link.svg" className=" size-3" />
           </li>
         ))}
       </ul>
