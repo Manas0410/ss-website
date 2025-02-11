@@ -9,7 +9,7 @@ const ListRenderer = ({ data: { heading, items } }) => {
       <ul className="flex flex-col gap-2">
         {items.map((item, i) => (
           <li
-            onClick={() => navigate(`/product/${item.nav}`)}
+            onClick={() => navigate(`/product${item.nav}`)}
             key={i}
             className="text-text hover:text-orange-light cursor-pointer flex gap-2 items-center"
           >
