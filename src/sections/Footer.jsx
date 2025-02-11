@@ -8,8 +8,8 @@ const Link = ({ url, logo }) => {
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-light w-full h-14 text-white">
-      <div className="content-container flex justify-between items-center h-full">
+    <footer className="bg-orange-light w-full h-max py-6 text-white">
+      <div className="content-container flex justify-between gap-4 items-center flex-wrap h-full px-10 lg:px-0">
         <div className="text-xs">
           <p>Copyright © 2022 The CRISP CANVAS. All Rights Reserved</p>
           <p>

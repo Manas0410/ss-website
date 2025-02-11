@@ -6,8 +6,8 @@ const SliderBg = () => {
       <img
         src={"/images/bg.png"}
         alt=""
-        className="h-screen w-full -z-10 fixed top-0 right-0"
-        style={{ objectFit: "cover", width: "calc(100% - 240px)" }}
+        className="h-screen w-full -z-10 fixed top-0 right-0 w-[calc(100%-240px] sm:w-full "
+        style={{ objectFit: "cover" }}
       />
     </>
   );

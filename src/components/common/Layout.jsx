@@ -1,6 +1,6 @@
 import React from "react";
 import SliderBg from "../slider-bg";
-import NavBar from "./sidebar";
+import NavBar from "./Sidebar";
 import NvigateOutletButton from "../NvigateOutletButton";
 
 const Layout = ({ children }) => {
@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <main className="flex h-screen w-screen overflow-hidden">
       <SliderBg />
       <NvigateOutletButton />
-      <aside className="bg-orange h-screen w-[240px]">
+      <aside className="bg-orange h-screen w-[240px] hidden sm:block">
         <h1 className="font-edo text-white text-6xl text-center mt-8">CRISP</h1>
         <h1 className="font-edo text-white text-6xl text-center mb-4">
           CANVAS
@@ -16,10 +16,7 @@ const Layout = ({ children }) => {
         <hr />
         <NavBar />
       </aside>
-      <div
-        className=" h-full overflow-y-auto bg-muted-foreground"
-        style={{ width: "calc(100% - 240px)" }}
-      >
+      <div className=" h-full overflow-y-auto bg-muted-foreground w-[calc(100%-240px] sm:w-full ">
         {children}
       </div>
     </main>

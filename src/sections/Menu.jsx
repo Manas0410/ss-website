@@ -25,9 +25,9 @@ const ListRenderer = ({ data: { heading, items } }) => {
 const Menu = () => {
   return (
     <section className="bg-white py-20" id="menu">
-      <div className="content-container">
+      <div className="content-container px-10 lg:px-0">
         <h2 className="heading-style text-center mb-10">Our Menu</h2>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-wrap">
           <div className="flex flex-col gap-8">
             <ListRenderer data={Chaats} />
             <ListRenderer data={CustomersFavourite} />

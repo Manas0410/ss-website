@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section className="bg-white pb-20" id="about">
-      <div className="content-container">
+      <div className="content-container px-10 lg:px-0">
         <h2 className="heading-style text-center mb-10">About</h2>
         <p className="text-center paragraph-style">
           The Rameshwaram Cafe is a premium South Indian chain of QSR module and
