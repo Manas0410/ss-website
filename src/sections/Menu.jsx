@@ -1,5 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { Chaats, CustomersFavourite, Puri, Drinks, AddOns } from "../constants";
+import {
+  Chaats,
+  CustomersFavourite,
+  Puri,
+  Drinks,
+  AddOns,
+  bhel,
+  FusionChaat,
+} from "../constants";
 
 const ListRenderer = ({ data: { heading, items } }) => {
   const navigate = useNavigate();
@@ -31,11 +39,13 @@ const Menu = () => {
           <div className="flex flex-col gap-8">
             <ListRenderer data={Chaats} />
             <ListRenderer data={CustomersFavourite} />
+            <ListRenderer data={FusionChaat} />
           </div>
           <div className="flex flex-col gap-8">
             <ListRenderer data={Puri} />
             <ListRenderer data={Drinks} />
             <ListRenderer data={AddOns} />
+            <ListRenderer data={bhel} />
           </div>
         </div>
       </div>

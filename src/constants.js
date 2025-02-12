@@ -1,3 +1,5 @@
+export const CompanyName = "KRISP";
+
 export const CarouselImages = [
   "/images/carousel1.jpg",
   "/images/carousel2.jpg",
@@ -43,16 +45,6 @@ export const Chaats = {
     { name: "Palak Aloo Tikki (Coming Soon)", nav: "/palak-aloo-tikki" },
     { name: "Matar Aloo Tikki", nav: "/matar-aloo-tikki" },
 
-    // Mini Bowls (No items specified, placeholder if needed)
-    // { name: "Placeholder Mini Bowl Item", nav: "/mini-bowl-item" },
-
-    // Fusion Section
-    { name: "Cheesy Nachos", nav: "/cheesy-nachos" },
-    { name: "Mexican Bhel (After Trying)", nav: "/mexican-bhel" },
-    { name: "Nachos with Cheesy Dip", nav: "/nachos-cheesy-dip" },
-    { name: "Paneer Strips (TBD)", nav: "/paneer-strips" },
-    { name: "Potato Strips (TBD)", nav: "/potato-strips" },
-
     // Samosa & Papdi Specials
     { name: "Samosa Chaat", nav: "/samosa-chaat" },
     { name: "Papdi Chaat", nav: "/papdi-chaat" },
@@ -64,18 +56,6 @@ export const Chaats = {
     { name: "Sabudana Chaat", nav: "/sabudana-chaat" },
     { name: "Aloo Paneer Tikki Chaat", nav: "/aloo-paneer-tikki-chaat" },
     { name: "Paneer Tikki Chaat", nav: "/paneer-tikki-chaat" },
-
-    // Puri Perfection
-    { name: "Classic Pani Puri", nav: "/classic-pani-puri" },
-    { name: "Flavored Pani Puri (TBD)", nav: "/flavored-pani-puri" },
-    { name: "Dahi Sev Puri", nav: "/dahi-sev-puri" },
-    { name: "Sev Puri", nav: "/sev-puri" },
-    { name: "Masala Puri ", nav: "/masala-puri" },
-
-    // Regional Chaat Wonders
-    { name: "Bhel Puri", nav: "/bhel-puri" },
-    { name: "Jhal Muri", nav: "/jhal-muri" },
-    { name: "Samosa Bhel ", nav: "/samosa-bhel" },
   ],
 };
 
@@ -93,9 +73,11 @@ export const CustomersFavourite = {
 export const Puri = {
   heading: "Puri",
   items: [
-    { name: "Pani puri", nav: "/pani-puri" },
-    { name: "Flavoured pani puri", nav: "/flavoured-pani-puri" },
-    { name: "Dahi sev puri", nav: "/dahi-sev-puri" },
+    { name: "Classic Pani Puri", nav: "/classic-pani-puri" },
+    { name: "Flavored Pani Puri (TBD)", nav: "/flavored-pani-puri" },
+    { name: "Dahi Sev Puri", nav: "/dahi-sev-puri" },
+    { name: "Sev Puri", nav: "/sev-puri" },
+    { name: "Masala Puri ", nav: "/masala-puri" },
   ],
 };
 
@@ -119,6 +101,26 @@ export const AddOns = {
     { name: "Peanut", nav: "/peanut" },
     { name: "Paneer", nav: "/paneer" },
     { name: "Corn", nav: "/corn" },
+  ],
+};
+
+export const bhel = {
+  heading: "Bhel",
+  items: [
+    { name: "Bhel Puri", nav: "/bhel-puri" },
+    { name: "Jhal Muri", nav: "/jhal-muri" },
+    { name: "Samosa Bhel", nav: "/samosa-bhel" },
+  ],
+};
+
+export const FusionChaat = {
+  heading: "Fusion Chaats",
+  items: [
+    { name: "Cheesy Nachos", nav: "/cheesy-nachos" },
+    { name: "Mexican Bhel (After Trying)", nav: "/mexican-bhel" },
+    { name: "Nachos with Cheesy Dip", nav: "/nachos-cheesy-dip" },
+    { name: "Paneer Strips (TBD)", nav: "/paneer-strips" },
+    { name: "Potato Strips (TBD)", nav: "/potato-strips" },
   ],
 };
 
