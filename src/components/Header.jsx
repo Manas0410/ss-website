@@ -3,12 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const [MenuOpen, setMenuOpen] = useState(false);
-  const navRef = useRef(null); // Ref for the navigation menu
-
+  const navRef = useRef(null);
   const Navigation = () => (
     <nav
-      ref={navRef} // Attach the ref to the navigation menu
-      className="flex flex-col gap-4 w-[200px] p-8 rounded-lg shadow-md text-white justify-center items-center hover:cursor-pointer bg-orange-light absolute top-[144%] right-0"
+      // Attach the ref to the navigation menu
+      className="flex flex-col gap-4 w-[200px] p-8 rounded-lg shadow-xl text-white justify-center items-center hover:cursor-pointer bg-orange-light absolute top-[144%] right-0"
     >
       {navData.map((item, i) => {
         return (
@@ -25,7 +24,6 @@ const Header = () => {
     </nav>
   );
 
-  // Effect to handle clicks outside the navigation menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -33,22 +31,18 @@ const Header = () => {
       }
     };
 
-    // Add event listener when the menu is open
-    if (MenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
+    document.addEventListener("mousedown", handleClickOutside);
 
-    // Cleanup the event listener
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [MenuOpen]);
+  }, []);
 
   return (
     <>
       <header className="flex sm:hidden items-center h-[52px] justify-between px-4 py-2 bg-orange text-white font-edo sticky top-0 z-50">
         <h1 className="text-3xl font-bold">{CompanyName}</h1>
-        <div className="relative">
+        <div className="relative" ref={navRef}>
           <label className="burger" htmlFor="burger">
             <input
               type="checkbox"
