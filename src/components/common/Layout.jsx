@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         <hr />
         <NavBar />
       </aside>
-      <div className=" h-full overflow-y-auto bg-muted-foreground w-[calc(100%-240px] sm:w-full ">
+      <div className=" h-full overflow-y-auto bg-muted-foreground sm:w-[calc(100%-240px] w-full ">
         <Header />
         {children}
       </div>

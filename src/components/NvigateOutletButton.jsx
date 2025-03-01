@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 const NvigateOutletButton = () => {
   return (
-    <div className="fixed bottom-16 right-8 z-50">
+    <div className="fixed bottom-16 right-8 z-50 max-sm:bottom-28">
       <PlantButton />
     </div>
   );

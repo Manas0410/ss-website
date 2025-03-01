@@ -4,7 +4,7 @@ const VisitUs = () => {
   return (
     <div className=" h-max min-h-screen w-full bg-white">
       <h2 className="heading-style text-center py-6">Visit Outlet</h2>
-      <address className="text-center">
+      <address className="text-center px-10">
         324,E BLOCK, SHYAM NAGAR, Kanpur, Uttar Pradesh 208013
       </address>
       <div className="w-full h-max p-10">
