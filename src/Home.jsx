@@ -7,9 +7,9 @@ import Footer from "./sections/Footer";
 import Gallery from "./sections/Gallery";
 import Menu from "./sections/Menu";
 
-const App = () => {
+const Home = () => {
   return (
-    <main>
+    <main id="home">
       <CustomSlider images={CarouselImages} />
       <About />
       <Specialities />
@@ -21,4 +21,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

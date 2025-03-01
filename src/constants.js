@@ -21,8 +21,8 @@ export const navData = [
     path: "/#menu",
   },
   {
-    label: "Contact Us",
-    path: "/#contact",
+    label: "Visit Us",
+    path: "/visit",
   },
 ];
 
@@ -323,3 +323,18 @@ export const MenuItemsDesc = {
       "समोसा और भेल का एक अनोखा फ्यूजन, यह डिश कुचले हुए समोसे को मुरमुरे, चटनी और मसालों के साथ मिलाती है। बनावट और स्वाद का एक सुंदर मिश्रण।",
   },
 };
+
+// banner
+// 1 free drink
+// 2 combo meal
+// 3 10% off and starting at just 49
+// 4 Krisp special chaat 1
+// 5 Krisp special chaat 2
+// 6 multiple options for oils and chaats can be completely customized using mineral water and very good ingredients
+
+// Specialities
+// 4 100% veg
+// 1 Mineral water
+// 2 good ingredients , olive oil , air fried , health
+// 3 hygiene
+// 5 vibrant flavors

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const NvigateOutletButton = () => {
   return (
     <div className="fixed bottom-16 right-8 z-50">
@@ -9,8 +11,9 @@ const NvigateOutletButton = () => {
 export default NvigateOutletButton;
 
 const PlantButton = () => {
+  const navigate = useNavigate();
   return (
-    <button className="button">
+    <button className="button" onClick={() => navigate("/visit")}>
       <p className="flex gap-2 text-white">
         <span>Visit Outlet</span>
         <img src="/images/navButton/right.svg" className="img-slide" alt="" />
