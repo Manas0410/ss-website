@@ -11,9 +11,10 @@ const Layout = ({ children }) => {
       <SliderBg />
       <NvigateOutletButton />
       <aside className="bg-orange h-screen w-[240px] hidden sm:block">
-        <h1 className="font-edo text-white text-6xl text-center my-8">
+        {/* <h1 className="font-edo text-white text-6xl text-center my-8">
           {CompanyName}
-        </h1>
+        </h1> */}
+        <img src="/images/logo.png" alt="KRISP" />
         <hr />
         <NavBar />
       </aside>

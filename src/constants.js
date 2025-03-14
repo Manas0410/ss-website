@@ -27,11 +27,11 @@ export const navData = [
 ];
 
 export const specialities = [
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
-  "/images/vegan.png",
+  "/images/speciality/0.png",
+  "/images/speciality/1.png",
+  "/images/speciality/2.png",
+  "/images/speciality/3.png",
+  "/images/speciality/4.png",
 ];
 
 export const Chaats = {
@@ -335,6 +335,6 @@ export const MenuItemsDesc = {
 // Specialities
 // 4 100% veg
 // 1 Mineral water
-// 2 good ingredients , olive oil , air fried , health
+// 2 good ingredients , olive oil ,Ghee, air fried , health
 // 3 hygiene
 // 5 vibrant flavors

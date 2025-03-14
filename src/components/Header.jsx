@@ -41,7 +41,11 @@ const Header = () => {
   return (
     <>
       <header className="flex sm:hidden items-center h-[52px] justify-between px-4 py-2 bg-orange text-white font-edo sticky top-0 z-50">
-        <h1 className="text-3xl font-bold">{CompanyName}</h1>
+        <div className="flex items-center gap-2">
+          <img src="/images/logo.png" alt="KRISP" width={80} />
+          {/* <h1 className="text-3xl font-bold">{CompanyName}</h1> */}
+        </div>
+
         <div className="relative" ref={navRef}>
           <label className="burger" htmlFor="burger">
             <input
